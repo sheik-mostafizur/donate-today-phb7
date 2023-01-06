@@ -97,8 +97,10 @@ section {
   background: #fafafa;
   border-radius: 5px;
   color: #707070;
+  border: 2px solid transparent;
+  transition: color 0.5s, border 0.5s;
 }
-.donate_today .amount h3:nth-child(2) {
+.donate_today .amount h3:hover {
   background: #ffeeee;
   color: #ff5959;
   border: 2px solid #ff5959;
