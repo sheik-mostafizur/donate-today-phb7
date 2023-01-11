@@ -91,7 +91,7 @@ section {
   margin: 4rem 0;
 }
 .donate_today .amount h3 {
-  width: 20%;
+  width: 100%;
   padding: 4rem 2rem;
   font-size: 2rem;
   background: #fafafa;
@@ -142,7 +142,7 @@ section {
 }
 .our_donate_plan .plans div {
   margin-top: 40px;
-  width: 30%;
+  width: 100%;
   border-radius: 5px;
   padding: 54px 23px;
 }
@@ -173,7 +173,7 @@ section {
 }
 .depend .lives div,
 .depend .need div {
-  width: 50%;
+  width: 100%;
 }
 .depend div h2 {
   font-size: 45px;
@@ -212,6 +212,7 @@ section {
   align-items: center;
   justify-content: center;
   background: #fff4d6;
+  padding: 0 1rem;
 }
 
 .my_update .subscribe input {
@@ -241,4 +242,53 @@ footer h2 {
   letter-spacing: 0.5px;
   color: #ff5959;
   margin-bottom: 1rem;
+}
+
+/* responsive */
+/*
+Breakpoint	Class infix	Dimensions
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+*/
+@media screen and (max-width: 992px) {
+  header .content h1 {
+    font-size: 3rem;
+  }
+  .donate_today .amount h3 {
+    padding: 3rem 0rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .donate_today .amount {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .donate_today .amount h3 {
+    width: 48%;
+  }
+  .our_donate_plan .plans {
+    flex-direction: column;
+  }
+  .depend .lives,
+  .depend .need {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .content h1 {
+    font-size: 2rem;
+  }
+  .donate_today .amount {
+    flex-direction: column;
+  }
+  .donate_today .amount h3 {
+    width: 100%;
+  }
+  .my_update {
+    max-width: 100%;
+  }
 }
